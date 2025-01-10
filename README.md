@@ -3,37 +3,37 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Planned Features](#planned-features)
-- [Environment & Dependencies](#environment--dependencies)
+- [Environment and Dependencies](#environment-and-dependencies)
 - [API Endpoints](#api-endpoints)
-- [Deployment & Usage](#deployment--usage)
+- [Deployment and Usage](#deployment-and-usage)
 - [Tasks](#tasks)
 
 ## Overview
-Handles all user-related functionality, including account creation, authentication, subscription management, and profile data.
+This service manages user-related functionality such as account creation, authentication, subscription management, and user profiles.
 
 ## Planned Features
-- [ ] User Registration (JWT or OAuth2)
-- [ ] Login/Logout & Session Handling
-- [ ] Profile Updates & Subscription Status
-- [ ] Password Recovery & Email Confirmations
+- User registration and authentication (JWT or OAuth2)
+- Login/Logout and session handling
+- Profile updates and subscription status
+- Password recovery and email confirmations
 
-## Environment & Dependencies
-- [.NET 6+ or Go] for core service logic
-- [Database] (SQL or NoSQL) for user data storage
-- [Docker] for containerization
+## Environment and Dependencies
+- .NET 6+ or Go for core service logic
+- A relational or NoSQL database for user data storage
+- Containerization using Docker
 
 ## API Endpoints
-- [ ] `/auth/register` – Create new account
-- [ ] `/auth/login` – User login
-- [ ] `/users/me` – Fetch/update user profile
+- `/auth/register` for new account creation
+- `/auth/login` for user login
+- `/users/me` to fetch or update user profile
 
-## Deployment & Usage
-- [ ] Local run with `dotnet run` or `go run main.go` (depending on chosen language)
-- [ ] Container build via `docker build -t photo-spotter-user-service .`
-- [ ] Kubernetes deploy with minimal `deployment.yaml` and `service.yaml`
+## Deployment and Usage
+- Build locally with `dotnet run` or `go run main.go` (language-dependent)
+- Containerize using `docker build -t photo-spotter-user-service .`
+- Deploy to Kubernetes with minimal `deployment.yaml` and `service.yaml`
 
 ## Tasks
-- [ ] Set up minimal service scaffold
-- [ ] Implement endpoints & authentication
-- [ ] Integrate with CI pipeline (build/tests)
-- [ ] Provide `/health` endpoint for basic checks
+- Set up basic service scaffold
+- Implement endpoints and authentication flow
+- Integrate with continuous integration pipeline
+- Provide a `/health` endpoint for status checks
